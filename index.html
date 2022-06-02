@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+    <!--
+    Etiqueta <meta> ideal para cargar ficheros-->
      <meta charset="UTF-8" />  
      <meta name="descriptions" content="Blog de programacion en videojuegos" />
      <meta name="robots" content="index,follow"/>     
@@ -10,22 +12,47 @@
         
     </head>
     <body>
+    <!--
+    Secciones del cuerpo del la pagina "header","nav","main","section", "footer", entre otras -->    
      <header>
          <nav></nav>
      </header>
      <main>
-       <h1>Lista de videojuegos favoritos</h1>
+        <section> 
+            <!--
+            Etiqueta <figure> almecena imagenes y figuras para podder manipulas su tamaño y forma
+            facilidad--> 
+            <figure>
+             <img src="./images/casa_de_finyjake.jpg " 
+                alt="la casa de finn y jake :3 "
+               />
+            </figure>
+            <!--
+            Seccion para la descripcion de la figure -->         
+            <figcaption>Es la casa de finn y Jake!!</figcaption>
+        </section>
+        
+        <h1>Lista de videojuegos favoritos</h1>
         <section>
             <ul>
-                <li>Grand theft Auto</li>
-                <li>Pro evolution Socccer</li>
-                <li>Drangon Ball Z budokai T</li>
-                <li>Need for speed</li>
-                <li>Minecraft</li>
-                <li>Call of Duty</li>
-                <li>Uncharted</li>
-                <li>The last of us</li>
-                <li>HALO</li>
+                <li><a href="https://es.wikipedia.org/wiki/Grand_Theft_Auto">Grand Theft Auto</a></li>
+                 <figure>
+                    <img src="./images/gta.png" alt="LOGOTIPO_de_grand_theft_auto"/>
+                 </figure>   
+                <li><a  href="https://es.wikipedia.org/wiki/Pro_Evolution_Soccer" >Pro evolution Socccer</a></li>
+                 <figure>
+                    <img src="./images/pes2021.jpeg" alt="Pro_Evolution_Soccer 2021" />
+                 </figure>  
+                <li>Drangon Ball Z Budokai Tenkaichi 3</li>
+                 <figure>                 
+                    <img src="./images/DBZ_BT3.webp" alt="Dragon_Ball_Z_Budokai_Tenkaichi_3">
+                 </figure>
+                    <li>Need for speed</li>
+                <li><a href="https://minecraft.fandom.com/es/wiki/Minecraft_Wiki">Minecraft </a></li>
+                <li>Call of Duty</li>                
+                <li>Uncharted</li>                
+                <li> <a href="https://es.wikipedia.org/wiki/The_Last_of_Us">The last of us</a></li>                
+                <li> <a href="https://es.wikipedia.org/wiki/Halo_2">HALO 2 </a></li>                
                 <li>Resident Evil 4 </li> 
             </ul>
             <h2>Top five!</h2>
@@ -34,9 +61,11 @@
                 <li>Grand theft Auto</li>
                 <li>Pro evolution Socccer</li>
                 <li>The last of us</li>
-                <li>Resident Evil 4 </li>
+                <li>Halo 2</li>
             </ol>
-
+            <video src="" controls preload="auto">
+                <source src="" />
+            </video>
         </section>
 
      </main>
