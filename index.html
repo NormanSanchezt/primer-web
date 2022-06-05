@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
-    <!--
-    Etiqueta <meta> ideal para cargar ficheros-->
+    <!--Etiqueta <meta> ideal para cargar ficheros-->
      <meta charset="UTF-8" />  
      <meta name="descriptions" content="Blog de programacion en videojuegos" />
      <meta name="robots" content="index,follow"/>     
@@ -12,28 +11,32 @@
         
     </head>
     <body>
-    <!--
-    Secciones del cuerpo del la pagina "header","nav","main","section", "footer", entre otras -->    
+    <!--Secciones del cuerpo del la pagina "header","nav","main","section", "footer", entre otras -->    
      <header>
          <nav></nav>
      </header>
      <main>
         <section> 
-            <!--
-            Etiqueta <figure> almecena imagenes y figuras para podder manipulas su tamaño y forma
+            <!--Etiqueta <figure> almecena imagenes y figuras para podder manipulas su tamaño y forma
             facilidad--> 
             <figure>
              <img src="./images/casa_de_finyjake.jpg " 
                 alt="la casa de finn y jake :3 "
                />
             </figure>
-            <!--
-            Seccion para la descripcion de la figure -->         
+            <!--Seccion para la descripcion de la figure -->         
             <figcaption>Es la casa de finn y Jake!!</figcaption>
         </section>
         
         <h1>Lista de videojuegos favoritos</h1>
         <section>
+            <!--estiqueta <video> usada para incertar video a nuestro citio web-->
+            <video controls preload="auto">
+                <source src="https://www.youtube.com/watch?v=1h9DAhtble8&ab_channel=Merluso" />
+            </video>
+            <!--estiquetas <ul>"relaiza listas sin enumeracion" comparada a <ol>"son listas ordenadas"
+            y <li>"agreda los elementos de las listas" cada una tienes agregada su imagen con <img>
+            junto a un hipervinculo con <a>"etiqueta usada para colocar hipervinculos"-->
             <ul>
                 <li><a href="https://es.wikipedia.org/wiki/Grand_Theft_Auto">Grand Theft Auto</a></li>
                  <figure>
@@ -63,9 +66,38 @@
                 <li>The last of us</li>
                 <li>Halo 2</li>
             </ol>
-            <video src="" controls preload="auto">
-                <source src="" />
-            </video>
+            <!--Etiqueta <form>"usada para realizar formilarios" acompañada de <label> y <input> para tener
+            un orden y tener codigo semantico-->
+            <form action="">
+                <label for="name">
+                    <span>¿Cuál es tu nombre?</span>
+                    <!--La etiqueta <input> tiene el atributo "type" que determina que tipo de input es y
+                    que va recibir del usuario -->
+                    <input type="text" id="name"/>
+                </label>
+                <label for="date_birthday">
+                    <span>¿Cuando es tu cumpleaños?</span>
+                    <input type="date" id="date_birthday"/>
+                </label>
+                <label for="hours_game">
+                    <span>¿Cuantas horas juegas al día?</span>
+                    <input type="time" id="hours_game"/>
+                </label>
+                <!--Etiquta <input> con el atributo "type=submit" que es usado como boton de accion-->
+                <input type="submit"/>
+            </form> 
+
+            <!--formulario con un <input> de tipo "datetime-loca" esto nos da un calendario más 
+            completo, donde el usuario nos puede dar mas informacion-->
+            <form action="">
+                <label for="calendar">
+                    <span>Calendario más completo</span>
+                    <input type="datetime-local" id="calendar" name="calendar"/>
+                </label>
+                <input type="submit" id="calendar"/>
+            </form>
+        
+        
         </section>
 
      </main>
