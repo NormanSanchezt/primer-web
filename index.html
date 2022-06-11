@@ -15,14 +15,21 @@
     <body>
     <!--Secciones del cuerpo del la pagina "header","nav","main","section", "footer", entre otras -->    
      <header>
-         <nav></nav>
+         <nav>
+             <ul class="main-nav">
+                <li class="main-nav__item"><a href="">Home</a></li>
+                <li class="main-nav__item"><a href="">Cursos</a></li>
+                <li class="main-nav__item"><a href="">Programadores</a></li>
+                <li class="main-nav__item"><a href="">Blog</a></li>
+            </ul>
+        </nav>
      </header>
      <main>
-        <section> 
+        <section class="set-portada"> 
             <!--Etiqueta <figure> almecena imagenes y figuras para podder manipulas su tamaño y forma
             facilidad--> 
-            <figure>
-             <img src="./images/casa_de_finyjake.jpg " 
+            <figure class="portada_img">
+             <img class="img_portada" src="./images/casa_de_finyjake.jpg " 
                 alt="la casa de finn y jake :3 "
                />
             </figure>
@@ -39,25 +46,25 @@
             <!--estiquetas <ul>"relaiza listas sin enumeracion" comparada a <ol>"son listas ordenadas"
             y <li>"agreda los elementos de las listas" cada una tienes agregada su imagen con <img>
             junto a un hipervinculo con <a>"etiqueta usada para colocar hipervinculos"-->
-            <ul>
+            <ul id="list-trash">
                 <li><a href="https://es.wikipedia.org/wiki/Grand_Theft_Auto">Grand Theft Auto</a></li>
                  <figure>
-                    <img src="./images/gta.png" alt="LOGOTIPO_de_grand_theft_auto"/>
+                    <img class="list-img" src="./images/gta.png" alt="LOGOTIPO_de_grand_theft_auto"/>
                  </figure>   
                 <li><a  href="https://es.wikipedia.org/wiki/Pro_Evolution_Soccer" >Pro evolution Socccer</a></li>
                  <figure>
-                    <img src="./images/pes2021.jpeg" alt="Pro_Evolution_Soccer 2021" />
+                    <img class="list-img" src="./images/pes2021.jpeg" alt="Pro_Evolution_Soccer 2021" />
                  </figure>  
                 <li>Drangon Ball Z Budokai Tenkaichi 3</li>
                  <figure>                 
-                    <img src="./images/DBZ_BT3.webp" alt="Dragon_Ball_Z_Budokai_Tenkaichi_3">
+                    <img class="list-img" src="./images/DBZ_BT3.webp" alt="Dragon_Ball_Z_Budokai_Tenkaichi_3">
                  </figure>
                     <li>Need for speed</li>
                 <li><a href="https://minecraft.fandom.com/es/wiki/Minecraft_Wiki">Minecraft </a></li>
                 <li>Call of Duty</li>                
                 <li>Uncharted</li>                
-                <li> <a href="https://es.wikipedia.org/wiki/The_Last_of_Us">The last of us</a></li>                
-                <li> <a href="https://es.wikipedia.org/wiki/Halo_2">HALO 2 </a></li>                
+                <li><a href="https://es.wikipedia.org/wiki/The_Last_of_Us">The last of us</a></li>                
+                <li><a href="https://es.wikipedia.org/wiki/Halo_2">HALO 2 </a></li>                
                 <li>Resident Evil 4 </li> 
             </ul>
             <h2 id="title2">Top five!</h2>
