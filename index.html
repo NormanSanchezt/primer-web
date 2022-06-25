@@ -7,16 +7,17 @@
      <meta name="robots" content="index,follow"/>     
      <meta name="viewport" content="width=divece-width, initial-scale=1.0"/>
      <link rel="stylesheet" href="/the-firts-web/CSS/index.css"/>
-     <link rel="stylesheet" href="/the-firts-web/CSS/index_class.css"/>
-
      <title> Programación de videojuegos </title>
         
     </head>
+
+
     <body>
     <!--Secciones del cuerpo del la pagina "header","nav","main","section", "footer", entre otras -->    
      <header>
+        <h1 id="page-title" class="title"> Pagina Estatica </h1>
          <nav>
-             <ul class="main-nav">
+             <ul id="main-nav" class="nav">
                 <li class="main-nav__item"><a href="">Home</a></li>
                 <li class="main-nav__item"><a href="">Cursos</a></li>
                 <li class="main-nav__item"><a href="">Programadores</a></li>
@@ -24,57 +25,72 @@
             </ul>
         </nav>
      </header>
+
      <main>
-        <section class="set-portada"> 
+        <section> 
             <!--Etiqueta <figure> almecena imagenes y figuras para podder manipulas su tamaño y forma
             facilidad--> 
-            <figure class="portada_img">
-             <img class="img_portada" src="./images/casa_de_finyjake.jpg " 
+            <figure>
+             <img id="img_portada" src="./images/casa_de_finyjake.jpg  " 
                 alt="la casa de finn y jake :3 "
                />
             </figure>
             <!--Seccion para la descripcion de la figure -->         
             <figcaption>Es la casa de finn y Jake!!</figcaption>
         </section>
-        
-        <h1 class="title1">Lista de videojuegos favoritos</h1>
+        <h1 id="title-list" class="list">Lista de videojuegos favoritos</h1>
         <section>
-            <!--estiqueta <video> usada para incertar video a nuestro citio web-->
-            <video src="https://www.youtube.com/watch?v=1h9DAhtble8&ab_channel=Merluso" controls preload="auto">
+            <!--estiqueta <video> usada para incertar video a nuestro sitio web-->
+            <video src="https://www.youtube.com/watch?v=1h9DAhtble8&ab_channel=Merluso" 
+            controls preload="auto">
                 <source src="https://www.youtube.com/watch?v=1h9DAhtble8&ab_channel=Merluso" />
             </video>
             <!--estiquetas <ul>"relaiza listas sin enumeracion" comparada a <ol>"son listas ordenadas"
             y <li>"agreda los elementos de las listas" cada una tienes agregada su imagen con <img>
             junto a un hipervinculo con <a>"etiqueta usada para colocar hipervinculos"-->
-            <ul id="list-trash">
-                <li><a href="https://es.wikipedia.org/wiki/Grand_Theft_Auto">Grand Theft Auto</a></li>
-                 <figure>
-                    <img class="list-img" src="./images/gta.png" alt="LOGOTIPO_de_grand_theft_auto"/>
-                 </figure>   
-                <li><a  href="https://es.wikipedia.org/wiki/Pro_Evolution_Soccer" >Pro evolution Socccer</a></li>
-                 <figure>
-                    <img class="list-img" src="./images/pes2021.jpeg" alt="Pro_Evolution_Soccer 2021" />
-                 </figure>  
-                <li>Drangon Ball Z Budokai Tenkaichi 3</li>
-                 <figure>                 
-                    <img class="list-img" src="./images/DBZ_BT3.webp" alt="Dragon_Ball_Z_Budokai_Tenkaichi_3">
-                 </figure>
-                    <li>Need for speed</li>
-                <li><a href="https://minecraft.fandom.com/es/wiki/Minecraft_Wiki">Minecraft </a></li>
-                <li>Call of Duty</li>                
-                <li>Uncharted</li>                
-                <li><a href="https://es.wikipedia.org/wiki/The_Last_of_Us">The last of us</a></li>                
-                <li><a href="https://es.wikipedia.org/wiki/Halo_2">HALO 2 </a></li>                
-                <li>Resident Evil 4 </li> 
+            <ul class="main-listgames">
+                <li class="listgames_item" >
+                    <a href="https://es.wikipedia.org/wiki/Grand_Theft_Auto">Grand Theft Auto</a>
+                </li>
+                    <figure>
+                        <img class="list-img" src="./images/gta.png" alt="LOGOTIPO_de_grand_theft_auto"/>
+                    </figure>   
+                <li class="listgames_item" >
+                    <a  href="https://es.wikipedia.org/wiki/Pro_Evolution_Soccer" >Pro evolution Socccer</a>
+                </li>
+                    <figure>
+                        <img class="list-img" src="./images/pes2021.jpeg" alt="Pro_Evolution_Soccer 2021" />
+                    </figure>  
+                <li class="listgames_item" >
+                    <a href="">Drangon Ball Z Budokai Tenkaichi 3</a>
+                </li>
+                    <figure>                 
+                        <img class="list-img" src="./images/DBZ_BT3.webp" alt="Dragon_Ball_Z_Budokai_Tenkaichi_3">
+                    </figure>
+                <li class="listgames_item" >Need for speed</li>
+                <li class="listgames_item" >
+                    <a href="https://minecraft.fandom.com/es/wiki/Minecraft_Wiki">Minecraft </a>
+                </li>
+                <li class="listgames_item" >Call of Duty</li>                
+                <li class="listgames_item" >Uncharted</li>                
+                <li class="listgames_item" >
+                    <a href="https://es.wikipedia.org/wiki/The_Last_of_Us">The last of us</a>
+                </li>                
+                <li class="listgames_item" >
+                    <a href="https://es.wikipedia.org/wiki/Halo_2">HALO 2 </a>
+                </li>                
+                <li class="listgames_item" >Resident Evil 4 </li> 
             </ul>
-            <h2 id="title2">Top five!</h2>
-            <ol>
-                <li>Minecraft</li>
-                <li>Grand theft Auto</li>
-                <li>Pro evolution Socccer</li>
-                <li>The last of us</li>
-                <li>Halo 2</li>
-            </ol>
+            <h2 id="title-list_2">Top five!</h2>
+            <ol id="main-topfive" class="topfive">
+                <li class="topfive_item" >Minecraft</li>
+                <li class="topfive_item" >Grand theft Auto</li>
+                <li class="topfive_item" >Pro evolution Socccer</li>
+                <li class="topfive_item" >The last of us</li>
+                <li class="topfive_item" >Halo 2</li>
+            </ol>  
+
+
             <!--Etiqueta <form>"usada para realizar formilarios" acompañada de <label> y <input> para tener
             un orden y tener codigo semantico-->
             <form action="">
@@ -106,8 +122,8 @@
                 <input type="submit" id="calendar"/>
             </form> 
         </section>
-
      </main>
+     
      <footer>
 
      </footer>
